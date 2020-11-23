@@ -1,0 +1,66 @@
+/*deadline options*/
+.deadline-radio-btns {
+    margin-bottom: 30px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label + .radio-label {
+    margin-top: 15px;
+}
+
+.radio__input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.radio__fake {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #777;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 7px;
+    vertical-align: bottom;
+}
+
+.radio__input:checked + .radio__fake {
+    background-color: #FFE074;
+
+}
+
+.radio__input:checked + .radio__fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: #3C3C3C;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #3C3C3C;
+    transform: translate(-50%, -50%);
+}
+
+
+.radio__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+}
+
+.radio__input:checked ~ .radio__title {
+    font-weight: 500;
+}

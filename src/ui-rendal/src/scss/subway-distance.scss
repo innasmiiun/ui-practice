@@ -1,0 +1,59 @@
+
+/*subway-distance*/
+.custom-distance-btns-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.subway-distance__button input {
+    padding: 0;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.custom-distance-btns-container .subway-distance__button {
+    width: 25%;
+}
+
+.subway-distance__button label {
+    cursor: pointer;
+    color: #3C3C3C;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.custom-distance-btns-container .subway-distance__button:first-of-type label {
+    border-radius: 4px 0 0 0;
+}
+
+.custom-distance-btns-container .subway-distance__button:last-of-type label {
+    border-radius: 0 4px 0 0;
+}
+
+.subway-distance__button input:checked + label {
+    background: #FFCF26;
+}
+
+.subway-distance__button input:checked + label:before {
+    background-color: #FFE074;
+}
+
+.any-distance-btn {
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 30px;
+}
+
+.any-distance-btn label {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+}

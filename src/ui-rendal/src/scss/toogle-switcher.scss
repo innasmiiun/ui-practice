@@ -1,0 +1,77 @@
+
+
+/*toogle-switcher*/
+.toggle-switcher {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-switcher .switch {
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.toggle-switcher .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switcher label {
+    color: #3C3C3C;
+    cursor: pointer;
+}
+
+.toggle-switcher .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle-switcher .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle-switcher input:checked + .slider {
+    background-color: #FFE074;
+}
+
+.toggle-switcher input:checked + .slider:before {
+    background-color: #3C3C3C;
+}
+
+.toggle-switcher input:focus + .slider {
+    box-shadow: 0 0 1px #FFE074;
+}
+
+.toggle-switcher input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.toggle-switcher .slider.round {
+    border-radius: 34px;
+}
+
+.toggle-switcher .slider.round:before {
+    border-radius: 50%;
+}

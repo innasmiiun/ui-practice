@@ -1,0 +1,50 @@
+
+/*accordion menu*/
+.acc-container {
+    width: 100%;
+}
+
+.acc-container .acc-label {
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    line-height: 33px;
+    font-size: 19px;
+}
+
+.acc-container .acc-input + .acc-label:after {
+    content: '';
+    border-right: 2px solid #3C3C3C;
+    border-top: 2px solid #3C3C3C;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 13px;
+    top: 7px;
+    transform: rotate(135deg);
+    transition: all .5s;
+}
+
+.acc-container .acc-input:checked + .acc-label:after {
+    transform: rotate(-45deg);
+}
+
+.acc-container .acc-input {
+    display: none;
+}
+
+.acc-container .acc-content {
+    margin-top: 20px;
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    z-index: 10;
+    transition: max-height .3s;
+}
+
+.acc-container .acc-input:checked ~ .acc-content {
+    transition: max-height 0.3s;
+    max-height: 999px;
+}
