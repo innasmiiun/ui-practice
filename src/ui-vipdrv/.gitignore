@@ -54,9 +54,3 @@ tools/gulp-tasks/cldr/cldr-data/
 
 # Husky
 .husky/_
-
-
-# IntellijIdea files
-*.iml
-.idea
-out

@@ -1,0 +1,21 @@
+.more {
+  @include flexs(center);
+  &_block {
+    display: flex;
+    margin-top: 160px;
+    margin-bottom: 80px;
+    width: 652px;
+    &__icon {
+      height: 72px;
+      width: 52px;
+      top: 1px;
+      border-radius: 0;
+      background: url("../assets/img-bgr/location-icon.svg") no-repeat no-repeat;
+      margin-right: 22px;
+    }
+    &__text {
+      @include font (900, 3.25rem, 1.17, #0157FF);
+    }
+  }
+
+}

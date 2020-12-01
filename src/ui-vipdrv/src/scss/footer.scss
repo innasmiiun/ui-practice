@@ -1,0 +1,83 @@
+%headers {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  @include flexs(space-evenly);
+
+  &_vipdrv {
+    &__header {
+      @extend %headers;
+    }
+
+    &_social {
+      margin: 20px 0;
+      @include flexs(flex-start);
+
+      div {
+        margin-right: 2px;
+        width: 30px;
+        height: 30px;
+        background-color: #F6F6F6;
+        border-radius: 50%;
+      }
+
+      &__github {
+        background: url("../assets/icons/github.svg") no-repeat center center;
+
+      }
+
+      &__facebook {
+        background: url("../assets/icons/facebook.svg") no-repeat center center;
+      }
+
+      &__twitter {
+        background: url("../assets/icons/twitter.svg") no-repeat center center;
+      }
+
+      &__instagram {
+        background: url("../assets/icons/instagram.svg") no-repeat center center;
+      }
+
+    }
+
+    &__dates {
+      color: #727070;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &_contacts {
+    &__header {
+      @extend %headers;
+    }
+
+    &__phone {
+      margin: 20px 0;
+      color: #7BA6FB;
+    }
+
+    &__mail {
+      margin-bottom: 30px;
+      color: #7BA6FB;
+    }
+  }
+
+  &_policies {
+    &__header {
+      @extend %headers;
+    }
+
+    &__privacy {
+      margin-bottom: 20px;
+      color: #7BA6FB;
+    }
+
+    &__cookies {
+      color: #7BA6FB;
+    }
+  }
+}
+

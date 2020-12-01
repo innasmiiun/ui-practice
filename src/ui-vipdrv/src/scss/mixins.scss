@@ -1,0 +1,13 @@
+@mixin flexs ($justify) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+@mixin font($w, $s, $h, $c) {
+  font-style: normal;
+  font-weight: $w;
+  font-size: $s;
+  line-height: $h;
+  color: $c;
+}

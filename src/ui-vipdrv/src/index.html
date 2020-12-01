@@ -9,32 +9,32 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
 <div class="main-page container-fluid">
-    <div class="header-block ">
-        <div class="header">
-            <div class="header__logo">
-                <img src="assets/vipdrv-logo.svg" alt="VIPdrv">
+    <div class="header">
+        <div class="header_block">
+            <div class="header_block__logo">
             </div>
-            <div class="header-menu">
-                <div class="header-menu__home">
+            <div class="header_block_menu">
+                <div class="header_block_menu__home">
                     HOME
                 </div>
-                <div class="header-menu__about">
+                <div class="header_block_menu__about">
                     ABOUT
                 </div>
-                <div class="header-menu__contact">
+                <div class="header_block_menu__contact">
                     CONTACT
                 </div>
             </div>
         </div>
-        <div class="header-information">
-            <div class="header-information__pht">
-                <img class="header-information__photo" src="assets/vipdrv.jpg" alt="">
-                <img class="header-information__screen" src="assets/vipdrv_screen.jpg" alt="">
+        <div class="header_information">
+            <div class="header_information__pht">
+                <img class="header_information__photo" src="assets/vipdrv.jpg" alt="">
+                <img class="header_information__screen" src="assets/vipdrv_screen.jpg" alt="">
             </div>
-            <div class="header-information__description">
+            <div class="header_information__description">
                 <p>
                     Creating the Best<br>
                     Online Customer<br>
@@ -48,18 +48,18 @@
         </div>
     </div>
     <div class="appointments">
-        <div class="appointments-block">
-            <div class="appointments-title">
-                <header>Want More Appointments?</header>
-                <p>
+        <div class="appointments_block">
+            <div class="appointments_block_title">
+                <header class="appointments_block_title__header">Want More Appointments?</header>
+                <p class="appointments_block_title__text">
                     Add VIPdrv to your dealer website and set your dealership apart from competition by<br>
                     creating a great online customer experience
                 </p>
             </div>
-            <div class="appointments-photo">
+            <div class="appointments_block__photo">
                 <img src="assets/car-info.jpg" alt="">
             </div>
-            <div class="appointments-content">
+            <div class="appointments_block_content">
                 <p>
                     We provide you with a customized button/CTA to add to your VDPs (Vehicle Detail Pages) and SRPs
                     (Search
@@ -69,319 +69,248 @@
                 </p>
             </div>
         </div>
-        <div class="appointments-car">
+        <div class="appointments_car">
             <img src="assets/car.png" alt="">
         </div>
     </div>
+
+    <div class="line">
+        <div class="space"></div>
+        <div class="curve-line"><img src="assets/curve1.svg" alt=""></div>
+    </div>
     <div class="steps">
-        <div class="steps-card">
-            <div class="steps-card-container">
-                <div class="steps-card__logo calendar">
-                </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 1</p>
-                    <p style="color: #FC5252">Set Day / Time</p>
-                </div>
-            </div>
-            <div class="steps-card__text">
-                <p>
-                    All dealer websites stop here.<br>
-                    Watch how we take a boring lead form and create the best online
-                    experiences for scheduling test drives
+        <div class="steps-left">
+           <step num-step="1" num-text="Set Day / Time"></step>
+            <div class="steps-left-text">
+                <p>There's no better way to separate from competition and offer customers a truly unique experience then
+                    to deliver a test drive offsite from the dealership VIPdrv makes it easy to offer test drive
+                    deliveries, including a max distance setting for delivery of vehicles
                 </p>
             </div>
+            <step num-step="3" num-text="Add Beverage"></step>
+            <div class="steps-left-text">
+                <p>What type of test drive do you want to take? Typical daily commute, hit the open road or quick drive
+                    by the house to park in the garage? We got you covered.
+                    We offer our trademarked Lifestyle Routes or can customize the test drive routes to your
+                    requirements. Our goal is to give your customers the best test drive experience to fit their
+                    lifestyle.
+                </p>
+            </div>
+            <step num-step="5" num-text="Add Salesperson"></step>
         </div>
-        <div class="steps-card">
-            <div class="steps-card__text">
-                <p>
-                    There's no better way to separate from competition and offer customers a truly unique experience
-                    then to
-                    deliver a test drive offsite from the dealership VIPdrv makes it easy to offer test drive
-                    deliveries,
-                    including a max distance setting for delivery of vehicles
+        <div class="steps-line">
+        </div>
+
+        <div class="steps-right">
+
+            <div class="steps-right-text">
+                <p>All dealer websites stop here.
+                    Watch how we take a boring lead form and create the best online experiences for scheduling test
+                    drives
                 </p>
             </div>
 
-            <div class="steps-card-container ">
-                <div class="steps-card__logo__text-right">
-                    <p>Step 2</p>
-                    <p style="color: #FC5252">Add Location</p>
-                </div>
-                <div class="steps-card__logo location">
-                </div>
+            <div class="steps-right-card">
 
-            </div>
-        </div>
-        <div class="steps-card">
-            <div class="steps-card-container">
-                <div class="steps-card__logo coffee">
+                <div class="steps-right-card-text">
+                    <div class="steps-right-card-text__arrow">
+                    </div>
+                    <div class="steps-right-card-text__description">
+                        <p>Step 2</p>
+                        <p class="color">Add Location</p>
+                    </div>
                 </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 3</p>
-                    <p style="color: #FC5252">Add Beverage</p>
-                </div>
+                <div class="steps-right-card__logo location"></div>
             </div>
-            <div class="steps-card__text">
-                <p>
-                    Yes, that's right.<br>
+
+            <div class="steps-right-text">
+                <p>Yes, that's right.
                     What better way to establish a good connection with a potential customer, than to offer a beverage,
                     waiting for them upon their arrival
                 </p>
             </div>
-        </div>
-        <div class="steps-card ">
-            <div class="steps-card__text">
-                <p>
-                    What type of test drive do you want to take? Typical daily commute, hit the open road or quick drive
-                    by
-                    the house to park in the garage? We got you covered.<br>
 
-                    We offer our trademarked Lifestyle Routes or can customize the test drive routes to your
-                    requirements.
-                    Our goal is to give your customers the best test drive experience to fit their lifestyle.
+            <div class="steps-right-card">
+
+                <div class="steps-right-card-text">
+                    <div class="steps-right-card-text__arrow">
+                    </div>
+                    <div class="steps-right-card-text__description">
+                        <p>Step 4</p>
+                        <p class="color">Select Route</p>
+                    </div>
+                </div>
+                <div class="steps-right-card__logo route"></div>
+            </div>
+            <div class="steps-right-text" style="height: 565px">
+                <p>We give the customer the ability to select a salesperson for their test drive appointment. This puts
+                    a name/face up front and begins the personalization of the test drive.
                 </p>
             </div>
-            <div class="steps-card-container">
 
-                <div class="steps-card__logo__text-right">
-                    <p>Step 4</p>
-                    <p style="color: #FC5252"> Select Route</p>
-                </div>
-                <div class="steps-card__logo route">
-                </div>
-            </div>
-        </div>
-        <div class="steps-card">
-            <div class="steps-card-container">
-                <div class="steps-card__logo salesperson">
-                </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 5</p>
-                    <p style="color: #FC5252">Add Salesperson</p>
-                </div>
-            </div>
-            <div class="steps-card__text">
-                <p>
-                    We give the customer the ability to select a salesperson for their test drive appointment. This puts
-                    a
-                    name/face up front and begins the personalization of the test drive.
-                </p>
-            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-text">
-            <div class="card-text__icon">
+    <div class="line">
+        <div class="curve-line"><img src="assets/curve1.svg" alt=""></div>
+        <div class="space2"></div>
+    </div>
+    <div class="vd-card">
+        <div class="vd-card_content">
+            <div class="vd-card_content_text">
+                <div class="vd-card_content_text__icon">
+                </div>
+                <p class="vd-card_content_text__desc">
+                    VIPdrv creates the best online customer experience for scheduling appointments from your dealer
+                    website,
+                    leading to a fantastic dealership visit and great opportunity for car sale, higher gross profit and
+                    better CSI.
+                </p>
             </div>
-            <p class="card-text__desc">
-                VIPdrv creates the best online customer experience for scheduling appointments from your dealer website,
-                leading to a fantastic dealership visit and great opportunity for car sale, higher gross profit and
-                better CSI.
-            </p>
-        </div>
-        <div class="card-photo">
-            <img src="assets/bitmap.jpg" alt="">
+            <div class="vd-card_content__photo">
+                <img src="assets/bitmap.jpg" alt="">
+            </div>
         </div>
     </div>
     <div class="more">
-        <div class="more-icon">
+        <div class="more__line">
+            <img src="assets/curve2.svg" alt="">
         </div>
-        <div class="more-text">
-            <p>Interested in</p>
-            <p style="color:#FF4A64"> Learning More?</p>
+        <div class="more_block">
+            <div class="more_block__icon">
+            </div>
+            <div class="more_block__text">
+                <p>Interested in</p>
+                <p class="color"> Learning More?</p>
+            </div>
         </div>
-
     </div>
     <div class="contact">
-        <div class="contact-more">
-            <div class="contact-more__header">
+        <div class="contact_more">
+            <div class="contact_more__header">
                 <p>Interested in</p>
-                <p style="color:#FF4A64"> Learning More?</p>
+                <p class="color"> Learning More?</p>
             </div>
-            <div class="contact-more__icon">
+            <div class="contact_more__icon">
 
             </div>
         </div>
-        <div class="contact-input">
-            <div class="contact-input__header">
+        <div class="contact_input">
+            <div class="contact_input__header">
                 Contact Us Today
             </div>
-            <div class="contact-input-form">
-                <div class="contact-input-form__firstname">
-                    <input type="text" id="firstname" placeholder="Fist Name">
-                    <label for="firstname"></label>
-                </div>
-                <div class="contact-input-form__lastname">
-                    <input type="text" id="lastname" placeholder="Last Name*">
-                    <label for="lastname"></label>
-                </div>
-                <div class="contact-input-form__dealership">
+            <div class="contact_input_form">
+                    <div class="contact_input_form__firstname form">
+                        <input type="text" id="firstname" placeholder="Fist Name">
+                        <label for="firstname"></label>
+                    </div>
+                    <div class="contact_input_form__lastname form">
+                        <input type="text" id="lastname" placeholder="Last Name*">
+                        <label for="lastname"></label>
+                    </div>
+                <div class="contact_input_form__dealership form">
                     <input type="text" id="dealership" placeholder="Dealership*">
                     <label for="Dealership"></label>
                 </div>
-                <div class="contact-input-form__email">
+                <div class="contact_input_form__email form">
                     <input type="text" id="email" placeholder="Email Addres*">
                     <label for="email"></label>
                 </div>
-                <div class="contact-input-form__phone">
+                <div class="contact_input_form__phone form">
                     <input type="text" id="phone" placeholder="Phone">
                     <label for="phone"></label>
                 </div>
-                <div class="contact-input-form__comment">
+                <div class="contact_input_form__comment form">
                     <input type="text" id="comment" placeholder="Comment">
                     <label for="comment"></label>
                 </div>
             </div>
-            <button class="contact-input__button">
+            <button class="contact_input__button">
                 Submit
             </button>
         </div>
     </div>
     <div class="footer">
-        <div class="footer-vipdrv">
-            <div class="footer-vipdrv__header">
+        <div class="footer_vipdrv">
+            <div class="footer_vipdrv__header">
                 <h3>VIPdrv</h3>
             </div>
-            <div class="footer-vipdrv__text">
+            <div class="footer_vipdrv__text">
                 <p>VIPdrv is protected under U.S. trademark and patent license</p>
             </div>
-            <div class="footer-vipdrv-social">
-                <div class="footer-vipdrv-social__github">
+            <div class="footer_vipdrv_social">
+                <div class="footer_vipdrv_social__github">
                     <a href="https://github.com/vipdrv" target="_blank"></a>
                 </div>
-                <div class="footer-vipdrv-social__facebook">
+                <div class="footer_vipdrv_social__facebook">
                     <a href="https://www.facebook.com/VIPdrvTestDrive" target="_blank"></a>
                 </div>
-                <div class="footer-vipdrv-social__twitter">
+                <div class="footer_vipdrv_social__twitter">
                     <a href="https://twitter.com/vipdrv" target="_blank"></a>
                 </div>
-                <div class="footer-vipdrv-social__instagram">
+                <div class="footer_vipdrv_social__instagram">
                     <a href="https://www.instagram.com/vipdrv" target="_blank"></a>
                 </div>
             </div>
-            <div class="footer-vipdrv__dates">
+            <div class="footer_vipdrv__dates">
                 <p>© VIPdrv 2016 - 2020</p>
             </div>
         </div>
-        <div class="footer-contacts">
-            <div class="footer-contacts__header">
+        <div class="footer_contacts">
+            <div class="footer_contacts__header">
                 <h3>Contacts</h3>
             </div>
-            <div class="footer-contacts__text">
+            <div class="footer_contacts__text">
                 <p>78206 Varner Rd, Palm Desert, CA. 92211</p>
             </div>
-            <div class="footer-contacts__phone">
+            <div class="footer_contacts__phone">
                 <a href="tel:760-469-9296">(760) 469-9296</a>
             </div>
-            <div class="footer-contacts__mail">
+            <div class="footer_contacts__mail">
                 <a href="mailto:support@vipdrv.com">support@vipdrv.com</a>
             </div>
         </div>
-        <div class="footer-policies">
-            <div class="footer-policies__header">
+        <div class="footer_policies">
+            <div class="footer_policies__header">
                 <h3>Policies</h3>
             </div>
-            <div class="footer-policies__privacy">
+            <div class="footer_policies__privacy">
                 <a href="https://www.vipdrv.com/privacy" target="_blank">Privacy</a>
             </div>
-            <div class="footer-policies__cookies">
+            <div class="footer_policies__cookies">
                 <a href="https://www.vipdrv.com/cookies" target="_blank">Cookies</a>
             </div>
 
         </div>
     </div>
-    <div class="steps-new">
-        <div class="steps-left">
-            <div class="steps-card-container">
-                <div class="steps-card__logo calendar">
-                </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 1</p>
-                    <p style="color: #FC5252">Set Day / Time</p>
-                </div>
-            </div>
-            <div class="steps-card__text new">
-                <p>
-                    There's no better way to separate from competition and offer customers a truly unique experience
-                    then to
-                    deliver a test drive offsite from the dealership VIPdrv makes it easy to offer test drive
-                    deliveries,
-                    including a max distance setting for delivery of vehicles
-                </p>
-            </div>
-            <div class="steps-card-container">
-                <div class="steps-card__logo coffee">
-                </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 3</p>
-                    <p style="color: #FC5252">Add Beverage</p>
-                </div>
-            </div>
-            <div class="steps-card__text">
-                <p>
-                    What type of test drive do you want to take? Typical daily commute, hit the open road or quick
-                    drive
-                    by
-                    the house to park in the garage? We got you covered.<br>
-
-                    We offer our trademarked Lifestyle Routes or can customize the test drive routes to your
-                    requirements.
-                    Our goal is to give your customers the best test drive experience to fit their lifestyle.
-                </p>
-            </div>
-            <div class="steps-card-container left">
-                <div class="steps-card__logo salesperson">
-                </div>
-                <div class="steps-card__logo__text-left">
-                    <p>Step 5</p>
-                    <p style="color: #FC5252">Add Salesperson</p>
-                </div>
-            </div>
-        </div>
-        <div class="steps-line">
-        </div>
-        <div class="steps-right">
-            <div class="steps-card__text">
-                <p>
-                    All dealer websites stop here.<br>
-                    Watch how we take a boring lead form and create the best online
-                    experiences for scheduling test drives
-                </p>
-            </div>
-            <div class="steps-card-container ">
-                <div class="steps-card__logo__text-right">
-                    <p>Step 2</p>
-                    <p style="color: #FC5252">Add Location</p>
-                </div>
-                <div class="steps-card__logo location">
-                </div>
-
-            </div>
-            <div class="steps-card__text">
-                <p>
-                    Yes, that's right.<br>
-                    What better way to establish a good connection with a potential customer, than to offer a beverage,
-                    waiting for them upon their arrival
-                </p>
-            </div>
-            <div class="steps-card-container ">
-
-                <div class="steps-card__logo__text-right">
-                    <p>Step 4</p>
-                    <p style="color: #FC5252"> Select Route</p>
-                </div>
-                <div class="steps-card__logo route">
-                </div>
-            </div>
-            <div class="steps-card__text">
-                <p>
-                    We give the customer the ability to select a salesperson for their test drive appointment. This puts
-                    a
-                    name/face up front and begins the personalization of the test drive.
-                </p>
-            </div>
-        </div>
-    </div>
 </div>
+<script>
+    Vue.component('step', {
+        template: `
+    <div>
+            <div class="steps-left-card">
+            <div class="steps-left-card__logo calendar"></div>
+            <div class="steps-left-card-text">
+                <div class="steps-left-card-text__arrow">
+                </div>
+                <div class="steps-left-card-text__description">
+                    <p>{{text}} {{numStep}}</p>
+                    <p class="color">{{numText}}</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        `,
+        data() {
+            return {
+                text: "Step"
+            }
+        },
+        props:['numStep', 'numText']
+    })
+
+    new Vue({
+        el: '.steps'
+    })
+</script>
 </body>
 </html>

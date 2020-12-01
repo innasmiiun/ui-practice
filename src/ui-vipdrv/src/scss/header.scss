@@ -1,0 +1,90 @@
+
+.header {
+  background-image: url("../assets/img-bgr/header-background.png");
+  z-index: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  max-height: 726px;
+
+  &_block {
+
+    @include flexs(space-around);
+    margin-top: 40px;
+
+    &__logo {
+      background: url("../assets/icons/vipdrv-logo.svg");
+      width: 160px;
+      height: 48px;
+    }
+
+    &_menu {
+      width: 268px;
+      align-items: center;
+
+      @include flexs (space-between);
+      @include font (500, 1.125rem, 1.17, white);
+      letter-spacing: 0.05em;
+
+
+      &__home {
+        cursor: pointer;
+      }
+
+      &__about {
+        cursor: pointer;
+      }
+
+      &__contact {
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  &_information {
+    margin-top: 76px;
+    @include flexs(center);
+
+    &__photo {
+      filter: drop-shadow(0px 16px 64px rgba(0, 0, 0, 0.24));
+      border-radius: 4px;
+    }
+
+    &__screen {
+      position: relative;
+      bottom: -72px;
+      left: -96px;
+      filter: drop-shadow(0px 16px 64px rgba(0, 0, 0, 0.24));
+      border-radius: 26px;
+    }
+
+    &__description {
+      @include font (900, 3.25rem, 1.17, #FF73B4);
+      letter-spacing: 0.05em;
+      text-align: right;
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 1366px) {
+  .header_information {
+    &__screen {
+      display: none;
+    }
+    &__pht {
+      margin-right: 30px;
+    }
+  }
+  .appointments_car {
+    display: none;
+  }
+
+}
+
+
+
+

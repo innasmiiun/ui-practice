@@ -1,0 +1,49 @@
+
+@import "./mixins.scss";
+@import "./header.scss";
+@import "./appointments.scss";
+@import "./steps.scss";
+@import "./card.scss";
+@import "./more.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    &:visited {
+    text-decoration: none !important;
+    }
+}
+
+.color {
+    color: #FF4A64;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+
+}
+
+.space {
+    width: 588px;
+    height: 296px;
+}
+.space2 {
+    width: 614px;
+    height: 296px;
+}

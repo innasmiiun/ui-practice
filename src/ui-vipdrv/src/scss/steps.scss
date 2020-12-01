@@ -1,0 +1,144 @@
+%block {
+  width: 480px;
+  height: 480px;
+
+  background: #FFFFFF;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  position: relative;
+}
+
+
+.steps {
+  @include flexs(center);
+  &-left {
+    width: 708px;
+
+    &-card {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 80px;
+
+      &__logo {
+        @extend %block;
+      }
+
+      &-text {
+        position: absolute;
+        right: -190px;
+        bottom: 30px;
+        text-align: right;
+
+        &__arrow {
+          background: url("../assets/lines/left-arrow.svg") right no-repeat no-repeat;
+          height: 58px;
+          margin-bottom: 24px;
+        }
+
+        &__description {
+          @include font(900, 3.25rem, 1.17, #0157FF);
+          letter-spacing: 0.05em;
+        }
+      }
+
+    }
+
+    &-text {
+      margin-left: 108px;
+      width: 560px;
+      height: 480px;
+
+      text-align: right;
+
+      margin-bottom: 80px;
+
+      @include font(normal, 1.375rem, 1.18, black);
+
+      position: relative;
+      p {
+          position: absolute;
+          top: 220px;
+      }
+
+    }
+  }
+
+  &-line {
+    background: url("../assets/lines/line2.svg") top no-repeat no-repeat;
+    width: 22px;
+    height: auto
+  }
+
+
+  &-right {
+    &-card {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 80px;
+      margin-left: 240px;
+      margin-top: 80px;
+
+      &__logo {
+        @extend %block;
+      }
+
+      &-text {
+        position: absolute;
+        left: -200px;
+        bottom: 30px;
+        &__arrow {
+          background: url("../assets/lines/right-arrow.svg") no-repeat no-repeat;
+          height: 58px;
+          margin-bottom: 24px;
+        }
+
+        &__description {
+          @include font(900, 3.25rem, 1.17, #0157FF);
+          letter-spacing: 0.05em;
+
+        }
+
+      }
+
+    }
+
+    &-text {
+      @include font(normal, 1.375rem, 1.18, black);
+
+      width: 560px;
+      height: 480px;
+      margin-left: 30px;
+
+      position: relative;
+      p {
+        position: absolute;
+        top: 220px;
+      }
+    }
+
+
+
+  }
+
+}
+
+.calendar {
+  background: url("../assets/img-bgr/calendar-icon.svg") no-repeat center center;
+}
+
+.location {
+  background: url("../assets/img-bgr/location-logo.svg") no-repeat center center;
+}
+
+.coffee {
+  background: url("../assets/img-bgr/coffee-icon.svg") no-repeat center center;
+}
+
+.route {
+  background: url("../assets/img-bgr/route-icon.svg") no-repeat center center;
+}
+
+.salesperson {
+  background: url("../assets/img-bgr/salesperson-icon.svg") no-repeat center center;
+}

@@ -37,6 +37,11 @@ module.exports = {
                     flatten: true
                 },
                 {
+                    from: './src/assets/img/*.svg',
+                    to: './assets',
+                    flatten: true
+                },
+                {
                     from: './src/assets/icons/*.svg',
                     to: './assets',
                     flatten: true
@@ -61,7 +66,14 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: ['style-loader', "css-loader", "sass-loader"]
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
             },
         ]
     }
